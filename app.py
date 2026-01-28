@@ -29,7 +29,7 @@ def calc_sum():
     if b < 1000:
       return jsonify({"taxIncome": 20/100*a, "taxSavings": 0}), 200
     
-    return jsonify({"taxIncome": 20/100*a, "taxSavings": 20/100*(b-1000)}), 200
+    return jsonify({"taxIncome": 20/100*a, "taxSavings": 15/100*(b-1000)}), 200
     
   except (ValueError, TypeError):
     return jsonify({"error4": "Both incomes must be numerical"}), 400
