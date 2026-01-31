@@ -73,19 +73,19 @@
 
     function displayError(data) {
       if (data.error1) {
-        feedback1.className = "error1";
+        feedback1.className = "error";
         feedback1.textContent = "Please provide your income";
       }
       else if (data.error2) {
-        feedback1.className = "error2";
+        feedback1.className = "error";
         feedback1.textContent = "Please provide positive income";
       }
       else if (data.error3) {
-        feedback2.className = "error3";
+        feedback2.className = "error";
         feedback2.textContent = "No tax is paid on saving interest less than £1000";
       }
       else if (data.error4) {
-        feedback1.className = "error4";
+        feedback1.className = "error";
         feedback1.textContent = "Both incomes must be numerical";
       }
       else if (data.error) {
