@@ -30,8 +30,7 @@ def calcTax():
     except (ValueError, TypeError):
       return jsonify({"error4": "Both incomes must be numerical"}), 400
     
-    return render_template('calculator.html')
-    
+    return render_template("index.html")
 
 
 @app.route('/confirm', methods=["GET"])
